@@ -65,12 +65,13 @@ To determine how many OSN exists, we propose the following algorithm:
 - Extract the n sequences from the fasta file.
 - Determine the adjacency matrix (i.e. for i,j < n and i<>j, if node i is connected to node j)
 - Create an empty set of visited set of nodes.
+- Create an empty hash-table mapping set of nodes (ordered set) to count value (integer).
 - Then recursively do:
-  - Check if the current visited set is stored in the cache.
-  - If not cached, we locate nodes that can validly follow the current state.
-  - If none are available, we select the next node to visit, we cache the count value and exit.
-  - Otherwise, we recursively sum each possible extension, updating the visited set.
-  - We store the total in the cache and return the result modulo 100003.
+  - Check if the count value of the current visited set is stored in the cache.
+  - If not cached, we identify the nodes that can be visited next.
+  - If there are no nodes left to visit (i.e., all nodes have been visited), we cache the current visited set to the count value of 1.
+  - Otherwise, we visit each of these nodes (recursively) and sum the their count value computed (modulo 100003).
+  - We store this sum count value in the cache and return that result.
 
 ## Algorithm
 
