@@ -80,7 +80,7 @@ A C++ Compiler (g++, clang++, etc.) supporting C++11 or higher is required.
 
 To compile the solution, run the following in terminal:
 ```
-g++ -std=c++11 main.cc seq_ordering_counter.cc utils.cc -o counter
+g++ -O3 -std=c++11 main.cc seq_ordering_counter.cc utils.cc -o counter
 ```
 
 ## Usage & Tests
