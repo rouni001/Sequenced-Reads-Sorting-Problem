@@ -1,9 +1,9 @@
-# HW_SG
-This repo presents the implementation for a fast sequences ordering counter from FASTA sequences.
+# Sequenced Reads Sorting Problem
+This repo presents the implementation for a fast sequences sorting counter from FASTA sequences.
 To determine the number of distinct ways to order a set of sequences, leveraging the fact some sequences 
 may be subsequences of others, our algorithm is based on a directed graph-based approach with caching.
 
-## Author
+## Author & Date
 Rachid Ounit, Ph.D.
 
 02/07/2025
@@ -11,7 +11,7 @@ Rachid Ounit, Ph.D.
 ## Introduction
 
 ## Problem Definition
-The homework assignment is defined as:
+The problem is defined as:
 
 We are given a fasta file (https://en.wikipedia.org/wiki/FASTA_format). For the
 moment, it is enough to understand that a fasta file contains a list of entries, where
