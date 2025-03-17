@@ -10,6 +10,11 @@ Rachid Ounit, Ph.D.
 
 ## Introduction
 
+Initially, this project was part of side project that is now released to the public. 
+This is a great occasion to share ideas and initiate collaboration with scientists interesting in fast counting
+and efficientt methodolgies for sequences sorting.
+
+
 ## Problem Definition
 The problem is defined as:
 
